@@ -1,5 +1,5 @@
 
-# Git Flow Scripts para Feature e Release
+# Git Flow Scripts para Feature, Release e Hotfix
 
 Este repositório contém scripts Bash para facilitar a criação e finalização de branches de `feature`, `release` e `hotfix`, seguindo a metodologia **Git Flow**. O uso dos scripts reduz o tempo necessário para criar e gerenciar estas branches.
 
