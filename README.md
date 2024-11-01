@@ -12,10 +12,10 @@ Este repositório contém scripts Bash para facilitar a criação e finalizaçã
    git config --global alias.feature '!sh <caminho>/feature.sh'
    git config --global alias.release '!sh <caminho>/release.sh'
    git config --global alias.hotfix '!sh <caminho>/hotfix.sh'
-   git config --global alias.finaliza_branch '!sh <caminho>/finaliza_branch.sh'
+   git config --global alias.end '!sh <caminho>/finalizar_branch.sh'
    ```
 
-   > Substitua `<caminho>` pelo diretório onde os scripts `feature.sh`, `release.sh`, `hotfix.sh` e `finaliza_branch.sh` estão salvos.
+   > Substitua `<caminho>` pelo diretório onde os scripts `feature.sh`, `release.sh`, `hotfix.sh` e `finalizar_branch.sh` estão salvos.
 
 ## Scripts
 
@@ -63,10 +63,10 @@ Este comando executa o script `hotfix.sh`, que:
 Para finalizar uma branch de feature ou release:
 
 ```bash
-git finaliza_branch <nome-da-branch>
+git end <nome-da-branch>
 ```
 
-Este comando executa o script `finaliza_branch.sh`, que:
+Este comando executa o script `finalizar_branch.sh`, que:
 - Deleta a branch local e remota.
 - Ao deletar uma feature a release é deletada
 - É possivel também deltar hotfix
@@ -96,7 +96,7 @@ Este comando executa o script `finaliza_branch.sh`, que:
 
 4. **Finalizando uma Branch:**
    ```bash
-   git finaliza_branch feature/minha-nova-feature
+   git end feature/minha-nova-feature
    ```
 
    - Este comando finaliza a branch de feature e release.
@@ -112,7 +112,7 @@ Certifique-se de estar na branch correta ao criar uma `release` ou `hotfix`. Rel
 ├── feature.sh          # Script para criação de branches de feature
 ├── release.sh          # Script para criação de branches de release
 ├── hotfix.sh           # Script para criação de branches de hotfix
-└── finaliza_branch.sh  # Script para finalizar branches de feature e release
+└── finalizar_branch.sh  # Script para finalizar branches de feature e release
 ```
 
 ### Exemplos
@@ -134,7 +134,7 @@ Certifique-se de estar na branch correta ao criar uma `release` ou `hotfix`. Rel
 
 4. **Para finalizar uma branch chamada `feature/ajuste-UI`:**
    ```bash
-   git finaliza_branch feature/ajuste-UI
+   git end feature/ajuste-UI
    ```
 
 ## Licença
