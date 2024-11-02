@@ -68,8 +68,8 @@ git end <nome-da-branch>
 
 Este comando executa o script `finalizar_branch.sh`, que:
 - Deleta a branch local e remota.
-- Ao deletar uma feature a release é deletada
-- É possivel também deltar hotfix
+- Ao deletar uma feature, a release é deletada
+- É possivel também deletar a hotfix
 
 ## Exemplo de Uso
 
