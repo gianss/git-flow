@@ -73,4 +73,4 @@ else
 fi
 
 # Retorna para a branch master após finalizar
-git checkout prd
+git checkout prod

@@ -16,10 +16,10 @@ if git rev-parse --quiet --verify "$feature"; then
     exit -1
 fi
 
-echo "Checkout prd"
-git checkout prd
-echo "Git pull prd"
+echo "Checkout prod"
+git checkout prod
+echo "Git pull prod"
 git pull
 echo "Criando nova feature"
-git checkout -B "$feature" prd
+git checkout -B "$feature" prod
 git push --set-upstream origin "$feature"

@@ -13,11 +13,11 @@ if git rev-parse --quiet --verify "$hotfix" > /dev/null; then
     exit 1
 fi
 
-echo "Fazendo checkout na branch prd..."
-git checkout prd
+echo "Fazendo checkout na branch prod..."
+git checkout prod
 
-echo "Atualizando branch prd..."
-git pull origin prd
+echo "Atualizando branch prod..."
+git pull origin prod
 
 echo "Criando a nova branch de hotfix: $hotfix"
 git checkout -b "$hotfix"
