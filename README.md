@@ -29,7 +29,7 @@ git feature <nome-da-feature>
 
 Este comando executa o script `feature.sh`, que:
 - Verifica se o nome da feature foi informado.
-- Cria a branch `feature/<nome-da-feature>` a partir da branch `master`.
+- Cria a branch `feature/<nome-da-feature>` a partir da branch `prd`.
 - Configura a branch `feature` no repositório remoto.
 
 ### Criando uma Release a partir de uma Feature
@@ -55,7 +55,7 @@ git hotfix <nome-do-hotfix>
 
 Este comando executa o script `hotfix.sh`, que:
 - Verifica se o nome do hotfix foi informado.
-- Cria a branch `hotfix/<nome-do-hotfix>` a partir da branch `master`.
+- Cria a branch `hotfix/<nome-do-hotfix>` a partir da branch `prd`.
 - Configura a branch `hotfix` no repositório remoto.
 
 ### Finalizando uma Branch de Feature ou Release
@@ -92,7 +92,7 @@ Este comando executa o script `finalizar_branch.sh`, que:
    git hotfix meu-hotfix
    ```
 
-   - Este comando cria uma branch de `hotfix` a partir da branch `master`.
+   - Este comando cria uma branch de `hotfix` a partir da branch `prd`.
 
 4. **Finalizando uma Branch:**
    ```bash
